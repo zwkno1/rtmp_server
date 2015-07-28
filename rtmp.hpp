@@ -11,6 +11,8 @@
 #include <stdint.h>
 #include <QDebug>
 
+#pragma pack(push,1)
+
 using boost::asio::ip::tcp;
 
 template<class _Ty, class _In>
@@ -35,7 +37,7 @@ struct handshake_data
 {
     uint32_t timestamp = 0;
     uint32_t timestamp1 = 0;
-    char random[1528] = {'0'};
+    char random[1528] = {0};
 };
 
 
@@ -191,4 +193,5 @@ private:
     boost::asio::io_service & service_;
 };
 
+#pragma pack(pop)
 #endif // RTMP_H

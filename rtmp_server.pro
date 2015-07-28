@@ -23,3 +23,7 @@ HEADERS += \
 
 QMAKE_CXXFLAGS += -std=c++11
 QMAKE_LIBS += -lboost_system-mt -lws2_32 -lmswsock
+
+#QMAKE_LIBDIR += D:\ToolKit\boost_1_57_0\lib
+#QMAKE_INCDIR += D:\ToolKit\boost_1_57_0
+#QMAKE_LIBS += -ID:/ToolKit/boost_1_57_0/lib -lboost_system-vc120-mt-1_57
